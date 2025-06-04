@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yudeen | Future Tech Visionary</title>
-    <meta name="description" content="Ambitious student mastering AI, software engineering, and financial markets to build world-changing technologies">
-    
+    <meta name="description"
+        content="Ambitious student mastering AI, software engineering, and financial markets to build world-changing technologies">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         :root {
             --primary: #00f7ff;
@@ -25,17 +27,17 @@
             --light: #e0e0ff;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
         }
-        
+
         body {
             font-family: 'Rajdhani', sans-serif;
             background-color: var(--dark);
@@ -43,35 +45,38 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-        
-        h1, h2, h3, h4 {
+
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Orbitron', sans-serif;
             font-weight: 700;
             letter-spacing: 1px;
         }
-        
+
         a {
             text-decoration: none;
             color: inherit;
         }
-        
+
         /* Base responsive typography */
         html {
             font-size: 16px;
         }
-        
+
         @media (max-width: 768px) {
             html {
                 font-size: 14px;
             }
         }
-        
+
         @media (max-width: 480px) {
             html {
                 font-size: 13px;
             }
         }
-        
+
         /* Header & Navigation */
         header {
             position: fixed;
@@ -87,7 +92,7 @@
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(0, 247, 255, 0.1);
         }
-        
+
         .logo {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.8rem;
@@ -99,28 +104,28 @@
             display: flex;
             align-items: center;
         }
-        
+
         .logo i {
             margin-right: 0.5rem;
             font-size: 1.5rem;
         }
-        
+
         .nav-links {
             display: flex;
             gap: 2rem;
         }
-        
+
         .nav-links a {
             position: relative;
             font-weight: 500;
             font-size: 1.1rem;
             transition: var(--transition);
         }
-        
+
         .nav-links a:hover {
             color: var(--primary);
         }
-        
+
         .nav-links a::after {
             content: '';
             position: absolute;
@@ -131,11 +136,11 @@
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             transition: var(--transition);
         }
-        
+
         .nav-links a:hover::after {
             width: 100%;
         }
-        
+
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -144,7 +149,7 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-        
+
         /* Mobile Navigation */
         @media (max-width: 768px) {
             .nav-links {
@@ -160,19 +165,19 @@
                 transition: var(--transition);
                 border-right: 1px solid rgba(0, 247, 255, 0.1);
             }
-            
+
             .nav-links.active {
                 left: 0;
                 background-color: rgba(70, 71, 71, 0.1);
                 margin: 50px;
 
             }
-            
+
             .mobile-menu-btn {
                 display: block;
             }
         }
-        
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -182,7 +187,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -194,19 +199,21 @@
             animation: pulse 15s infinite alternate;
             z-index: -1;
         }
-        
+
         @keyframes pulse {
             0% {
                 transform: translate(0, 0);
             }
+
             50% {
                 transform: translate(10%, 10%);
             }
+
             100% {
                 transform: translate(-10%, -10%);
             }
         }
-        
+
         .hero-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -215,7 +222,7 @@
             gap: 3rem;
             align-items: center;
         }
-        
+
         .hero-text h1 {
             font-size: 3.5rem;
             margin-bottom: 1.5rem;
@@ -225,23 +232,23 @@
             background-clip: text;
             color: transparent;
         }
-        
+
         .hero-text h1 span {
             display: block;
         }
-        
+
         .hero-text p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             max-width: 600px;
         }
-        
+
         .hero-btns {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
         }
-        
+
         .btn {
             padding: 0.8rem 1.8rem;
             border-radius: 50px;
@@ -251,27 +258,27 @@
             transition: var(--transition);
             border: 2px solid transparent;
         }
-        
+
         .btn-primary {
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             color: var(--dark);
         }
-        
+
         .btn-outline {
             border-color: var(--primary);
             color: var(--primary);
         }
-        
+
         .btn-outline:hover {
             background-color: rgba(0, 247, 255, 0.1);
         }
-        
+
         .hero-image {
             position: relative;
             display: flex;
             justify-content: center;
         }
-        
+
         .hero-image img {
             max-width: 100%;
             height: auto;
@@ -279,78 +286,81 @@
             box-shadow: 0 0 50px rgba(0, 247, 255, 0.2);
             animation: float 6s ease-in-out infinite;
         }
-        
+
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(-20px);
             }
         }
-        
+
         /* Responsive Hero */
         @media (max-width: 1024px) {
             .hero-content {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            
+
             .hero-text {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .hero-btns {
                 justify-content: center;
             }
-            
+
             .hero-image {
                 margin-top: 3rem;
             }
-            
+
             .hero-text h1 {
                 font-size: 2.8rem;
             }
         }
-        
+
         @media (max-width: 480px) {
             .hero-text h1 {
                 font-size: 2.2rem;
             }
-            
+
             .hero-btns {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .btn {
                 width: 100%;
                 text-align: center;
             }
         }
-        
+
         /* About Section */
         .about {
             padding: 8rem 5%;
             background-color: var(--darker);
             position: relative;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 5rem;
             position: relative;
         }
-        
+
         .section-title h2 {
             font-size: 2.5rem;
             display: inline-block;
             position: relative;
             padding-bottom: 1rem;
         }
-        
+
         .section-title h2::after {
             content: '';
             position: absolute;
@@ -361,7 +371,7 @@
             height: 3px;
             background: linear-gradient(90deg, var(--primary), var(--secondary));
         }
-        
+
         .about-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -370,25 +380,25 @@
             gap: 4rem;
             align-items: center;
         }
-        
+
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
             color: var(--primary);
         }
-        
+
         .about-text p {
             margin-bottom: 1.5rem;
             font-size: 1.1rem;
         }
-        
+
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             margin-top: 2rem;
         }
-        
+
         .skill-chip {
             padding: 0.5rem 1.2rem;
             background-color: rgba(0, 247, 255, 0.1);
@@ -397,57 +407,57 @@
             font-size: 0.9rem;
             transition: var(--transition);
         }
-        
+
         .skill-chip:hover {
             background-color: rgba(0, 247, 255, 0.3);
             transform: translateY(-3px);
         }
-        
+
         .about-image {
             position: relative;
         }
-        
+
         .about-image img {
             width: 100%;
             border-radius: 15px;
             box-shadow: 0 0 30px rgba(0, 247, 255, 0.2);
         }
-        
+
         /* Responsive About */
         @media (max-width: 1024px) {
             .about-content {
                 grid-template-columns: 1fr;
             }
-            
+
             .about-text {
                 order: 2;
                 text-align: center;
             }
-            
+
             .about-image {
                 order: 1;
                 max-width: 500px;
                 margin: 0 auto;
             }
-            
+
             .skills {
                 justify-content: center;
             }
         }
-        
+
         /* Journey Section */
         .journey {
             padding: 8rem 5%;
             position: relative;
         }
-        
+
         .timeline {
             max-width: 1200px;
             margin: 0 auto;
             position: relative;
             padding: 2rem 0;
         }
-        
+
         .timeline::before {
             content: '';
             position: absolute;
@@ -458,13 +468,13 @@
             height: 100%;
             background: linear-gradient(to bottom, var(--primary), var(--secondary));
         }
-        
+
         .timeline-item {
             position: relative;
             margin-bottom: 4rem;
             width: 100%;
         }
-        
+
         .timeline-item:nth-child(odd) .timeline-content {
             margin-left: auto;
             margin-right: 0;
@@ -472,14 +482,14 @@
             padding-right: 3rem;
             text-align: right;
         }
-        
+
         .timeline-item:nth-child(even) .timeline-content {
             margin-right: auto;
             margin-left: 0;
             padding-right: 0;
             padding-left: 3rem;
         }
-        
+
         .timeline-content {
             width: calc(50% - 40px);
             padding: 2rem;
@@ -490,12 +500,12 @@
             position: relative;
             transition: var(--transition);
         }
-        
+
         .timeline-content:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0, 247, 255, 0.3);
         }
-        
+
         .timeline-content::before {
             content: '';
             position: absolute;
@@ -505,15 +515,15 @@
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             top: 30px;
         }
-        
+
         .timeline-item:nth-child(odd) .timeline-content::before {
             right: -50px;
         }
-        
+
         .timeline-item:nth-child(even) .timeline-content::before {
             left: -50px;
         }
-        
+
         .timeline-date {
             display: inline-block;
             padding: 0.3rem 1rem;
@@ -523,19 +533,19 @@
             font-weight: 600;
             margin-bottom: 1rem;
         }
-        
+
         .timeline-title {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--primary);
         }
-        
+
         /* Responsive Timeline */
         @media (max-width: 768px) {
             .timeline::before {
                 left: 40px;
             }
-            
+
             .timeline-item:nth-child(odd) .timeline-content,
             .timeline-item:nth-child(even) .timeline-content {
                 width: calc(100% - 80px);
@@ -544,18 +554,18 @@
                 padding-right: 2rem;
                 text-align: left;
             }
-            
+
             .timeline-content::before {
                 left: -50px !important;
             }
         }
-        
+
         /* Projects Section */
         .projects {
             padding: 8rem 5%;
             background-color: var(--darker);
         }
-        
+
         .projects-grid {
             max-width: 1200px;
             margin: 0 auto;
@@ -563,7 +573,7 @@
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 2rem;
         }
-        
+
         .project-card {
             background-color: rgba(10, 10, 18, 0.7);
             border-radius: 15px;
@@ -572,63 +582,63 @@
             transition: var(--transition);
             position: relative;
         }
-        
+
         .project-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0, 247, 255, 0.2);
             border-color: var(--primary);
         }
-        
+
         .project-image {
             height: 200px;
             overflow: hidden;
         }
-        
+
         .project-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: var(--transition);
         }
-        
+
         .project-card:hover .project-image img {
             transform: scale(1.05);
         }
-        
+
         .project-content {
             padding: 1.5rem;
         }
-        
+
         .project-title {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
             color: var(--primary);
         }
-        
+
         .project-description {
             margin-bottom: 1.5rem;
             color: rgba(224, 224, 255, 0.8);
         }
-        
+
         .project-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .project-tag {
             padding: 0.3rem 0.8rem;
             background-color: rgba(0, 247, 255, 0.1);
             border-radius: 50px;
             font-size: 0.8rem;
         }
-        
+
         .project-links {
             display: flex;
             gap: 1rem;
         }
-        
+
         .project-link {
             display: inline-flex;
             align-items: center;
@@ -638,36 +648,36 @@
             font-weight: 500;
             transition: var(--transition);
         }
-        
+
         .project-link.live {
             background-color: rgba(0, 247, 255, 0.1);
             border: 1px solid var(--primary);
             color: var(--primary);
         }
-        
+
         .project-link.code {
             background-color: rgba(255, 0, 234, 0.1);
             border: 1px solid var(--secondary);
             color: var(--secondary);
         }
-        
+
         .project-link:hover {
             transform: translateY(-3px);
         }
-        
+
         /* Responsive Projects */
         @media (max-width: 768px) {
             .projects-grid {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         /* Contact Section */
         .contact {
             padding: 8rem 5%;
             position: relative;
         }
-        
+
         .contact-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -675,14 +685,14 @@
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
         }
-        
+
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            
+
         }
-        
+
         .contact-card {
             display: flex;
             align-items: flex-start;
@@ -693,37 +703,38 @@
             border: 1px solid rgba(0, 247, 255, 0.1);
             transition: var(--transition);
         }
-        
+
         .contact-card:hover {
             transform: translateY(-5px);
             border-color: var(--primary);
         }
-        
+
         .contact-icon {
             font-size: 1.5rem;
             color: var(--primary);
         }
-        
+
         .contact-details h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
-        
-        .contact-details p, .contact-details a {
+
+        .contact-details p,
+        .contact-details a {
             color: rgba(224, 224, 255, 0.8);
             transition: var(--transition);
         }
-        
+
         .contact-details a:hover {
             color: var(--primary);
         }
-        
+
         .social-links {
             display: flex;
             gap: 1rem;
             margin-top: 1rem;
         }
-        
+
         .social-link {
             width: 40px;
             height: 40px;
@@ -736,30 +747,30 @@
             color: var(--primary);
             transition: var(--transition);
         }
-        
+
         .social-link:hover {
             background-color: var(--primary);
             color: var(--dark);
             transform: translateY(-3px);
         }
-        
+
         .contact-form {
             background-color: rgba(10, 10, 18, 0.7);
             padding: 2rem;
             border-radius: 10px;
             border: 1px solid rgba(0, 247, 255, 0.1);
         }
-        
+
         .form-group {
             margin-bottom: 1.5rem;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 500;
         }
-        
+
         .form-control {
             width: 100%;
             padding: 0.8rem 1rem;
@@ -770,18 +781,18 @@
             font-family: 'Rajdhani', sans-serif;
             transition: var(--transition);
         }
-        
+
         .form-control:focus {
             outline: none;
             border-color: var(--primary);
             box-shadow: 0 0 10px rgba(0, 247, 255, 0.2);
         }
-        
+
         textarea.form-control {
             min-height: 150px;
             resize: vertical;
         }
-        
+
         .submit-btn {
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             color: var(--dark);
@@ -795,19 +806,19 @@
             align-items: center;
             gap: 0.5rem;
         }
-        
+
         .submit-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 247, 255, 0.3);
         }
-        
+
         /* Responsive Contact */
         @media (max-width: 1024px) {
             .contact-container {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         /* Footer */
         footer {
             padding: 3rem 5%;
@@ -815,12 +826,12 @@
             text-align: center;
             position: relative;
         }
-        
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .footer-logo {
             font-family: 'Orbitron', sans-serif;
             font-size: 2rem;
@@ -831,7 +842,7 @@
             color: transparent;
             margin-bottom: 1.5rem;
         }
-        
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -839,22 +850,22 @@
             margin-bottom: 2rem;
             flex-wrap: wrap;
         }
-        
+
         .footer-links a {
             transition: var(--transition);
         }
-        
+
         .footer-links a:hover {
             color: var(--primary);
         }
-        
+
         .footer-social {
             display: flex;
             justify-content: center;
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
-        
+
         .footer-social a {
             width: 45px;
             height: 45px;
@@ -868,18 +879,18 @@
             font-size: 1.2rem;
             transition: var(--transition);
         }
-        
+
         .footer-social a:hover {
             background-color: var(--primary);
             color: var(--dark);
             transform: translateY(-3px);
         }
-        
+
         .copyright {
             color: rgba(224, 224, 255, 0.6);
             font-size: 0.9rem;
         }
-        
+
         .back-to-top {
             position: fixed;
             bottom: 2rem;
@@ -899,54 +910,55 @@
             transition: var(--transition);
             z-index: 999;
         }
-        
+
         .back-to-top.active {
             opacity: 1;
             visibility: visible;
         }
-        
+
         /* Animations */
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .fade-in {
             animation: fadeIn 1s ease forwards;
         }
-        
+
         .delay-1 {
             animation-delay: 0.2s;
         }
-        
+
         .delay-2 {
             animation-delay: 0.4s;
         }
-        
+
         .delay-3 {
             animation-delay: 0.6s;
         }
-        
+
         /* Utility Classes */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 5%;
         }
-        
+
         .text-gradient {
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
-        
+
         /* JavaScript Classes */
         .active {
             display: block !important;
@@ -958,7 +970,7 @@
     <!-- Header -->
     <header>
         <a href="#" class="logo"><i class="fas fa-code"></i>Yudeen</a>
-        
+
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -967,7 +979,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            
+
             <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
@@ -984,7 +996,8 @@
                     <span class="text-gradient">Code & AI</span>
                 </h1>
                 <p>
-                    Ambitious student mastering AI, software engineering, and financial markets to build world-changing technologies. 
+                    Ambitious student mastering AI, software engineering, and financial markets to build world-changing
+                    technologies.
                     My journey isn't just about success — it's about transformation, ownership, and creating a legacy.
                 </p>
                 <div class="hero-btns">
@@ -1004,24 +1017,30 @@
             <div class="section-title fade-in">
                 <h2>About Me</h2>
             </div>
-            
+
             <div class="about-content">
                 <div class="about-text fade-in">
                     <h3>The Visionary Behind The Code</h3>
                     <p>
-                        I'm a highly ambitious student from Nepal, currently studying at Aakash Institute with a clear vision for the future. 
-                        Having recently completed my SEE (class 10), I've dedicated the next two years of my life to mastering high-value skills 
+                        I'm a highly ambitious student from Nepal, currently studying at Aakash Institute with a clear
+                        vision for the future.
+                        Having recently completed my SEE (class 10), I've dedicated the next two years of my life to
+                        mastering high-value skills
                         in software engineering, artificial intelligence, and modern entrepreneurship.
                     </p>
                     <p>
-                        My ultimate goal is to build world-changing tech products and become one of the leading innovators and billionaires of the future. 
-                        I believe that technology, when combined with financial intelligence, can solve some of humanity's greatest challenges.
+                        My ultimate goal is to build world-changing tech products and become one of the leading
+                        innovators and billionaires of the future.
+                        I believe that technology, when combined with financial intelligence, can solve some of
+                        humanity's greatest challenges.
                     </p>
                     <p>
-                        Alongside my technical journey, I'm also deeply involved in learning the art of equity trading, particularly focusing on 
-                        intraday and swing trading within the NIFTY 50 market. I live by discipline, self-education, and action.
+                        Alongside my technical journey, I'm also deeply involved in learning the art of equity trading,
+                        particularly focusing on
+                        intraday and swing trading within the NIFTY 50 market. I live by discipline, self-education, and
+                        action.
                     </p>
-                    
+
                     <div class="skills">
                         <span class="skill-chip">Artificial Intelligence</span>
                         <span class="skill-chip">Machine Learning</span>
@@ -1033,7 +1052,7 @@
                         <span class="skill-chip">Entrepreneurship</span>
                     </div>
                 </div>
-                
+
                 <div class="about-image delay-1">
                     <img src="./2.png" alt="Yudeen">
                 </div>
@@ -1047,47 +1066,50 @@
             <div class="section-title fade-in">
                 <h2>My Journey</h2>
             </div>
-            
+
             <div class="timeline">
                 <div class="timeline-item fade-in">
                     <div class="timeline-content">
                         <span class="timeline-date">2026 - Present</span>
                         <h3 class="timeline-title">Mastering High-Value Skills</h3>
                         <p>
-                            Dedicated to intensive learning of software engineering, AI, and financial markets. 
+                            Dedicated to intensive learning of software engineering, AI, and financial markets.
                             Building projects that combine technical skills with financial intelligence.
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="timeline-item fade-in delay-1">
                     <div class="timeline-content">
                         <span class="timeline-date">2025</span>
                         <h3 class="timeline-title">Completed SEE (Class 10)</h3>
                         <p>
-                            Successfully completed secondary education with distinction, marking the beginning of my focused journey 
+                            Successfully completed secondary education with distinction, marking the beginning of my
+                            focused journey
                             toward technological mastery and financial independence.
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="timeline-item fade-in delay-2">
                     <div class="timeline-content">
                         <span class="timeline-date">2024</span>
                         <h3 class="timeline-title">Discovered Passion for Tech & Finance</h3>
                         <p>
-                            The pivotal year when I realized the power of combining technical skills with financial intelligence. 
+                            The pivotal year when I realized the power of combining technical skills with financial
+                            intelligence.
                             Began learning programming and stock market fundamentals simultaneously.
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="timeline-item fade-in delay-3">
                     <div class="timeline-content">
                         <span class="timeline-date">2023</span>
                         <h3 class="timeline-title">First Lines of Code</h3>
                         <p>
-                            Wrote my first "Hello World" program, sparking a curiosity that would grow into a lifelong passion 
+                            Wrote my first "Hello World" program, sparking a curiosity that would grow into a lifelong
+                            passion
                             for creating with code and solving problems through technology.
                         </p>
                     </div>
@@ -1102,16 +1124,18 @@
             <div class="section-title fade-in">
                 <h2>My Projects</h2>
             </div>
-            
+
             <div class="projects-grid">
                 <div class="project-card fade-in">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AI Trading Bot">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="AI Trading Bot">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">AI-Powered Trading Assistant</h3>
                         <p class="project-description">
-                            Machine learning model that analyzes NIFTY 50 patterns and provides trade recommendations with 75% accuracy.
+                            Machine learning model that analyzes NIFTY 50 patterns and provides trade recommendations
+                            with 75% accuracy.
                         </p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
@@ -1119,19 +1143,21 @@
                             <span class="project-tag">Financial Analysis</span>
                         </div>
                         <div class="project-links">
-                            
+
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-card fade-in delay-1">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Automated Trading System">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80"
+                            alt="Automated Trading System">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Automated Trading System</h3>
                         <p class="project-description">
-                            Algorithmic trading system that executes trades based on technical indicators with risk management protocols.
+                            Algorithmic trading system that executes trades based on technical indicators with risk
+                            management protocols.
                         </p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
@@ -1139,19 +1165,21 @@
                             <span class="project-tag">API Integration</span>
                         </div>
                         <div class="project-links">
-                            
+
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="project-card fade-in delay-2">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Portfolio Website">
+                        <img src="https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Portfolio Website">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Interactive Portfolio Platform</h3>
                         <p class="project-description">
-                            Modern, responsive portfolio website showcasing projects, skills, and journey with interactive elements.
+                            Modern, responsive portfolio website showcasing projects, skills, and journey with
+                            interactive elements.
                         </p>
                         <div class="project-tags">
                             <span class="project-tag">HTML/CSS</span>
@@ -1159,7 +1187,7 @@
                             <span class="project-tag">Responsive Design</span>
                         </div>
                         <div class="project-links">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -1173,7 +1201,7 @@
             <div class="section-title fade-in">
                 <h2>Get In Touch</h2>
             </div>
-            
+
             <div class="contact-container">
                 <div class="contact-info fade-in">
                     <div class="contact-card">
@@ -1182,20 +1210,23 @@
                         </div>
                         <div class="contact-details">
                             <h3>Email</h3>
-                            <a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSDZqfnvJsNKSVBbSqqxqPLSvtKXGLJfFMnXzMWMkHSvBwXkkTCQQFKFgHfzQHvcNfZpJwJL">yudeendahal80@gmail.com</a>
+                            <a
+                                href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSDZqfnvJsNKSVBbSqqxqPLSvtKXGLJfFMnXzMWMkHSvBwXkkTCQQFKFgHfzQHvcNfZpJwJL">yudeendahal80@gmail.com</a>
                         </div>
                     </div>
-                    
+
                     <div class="contact-card delay-1">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
                             <h3>Location</h3>
-                            <a href="https://www.google.com/maps/place/Itahari/@26.6740409,87.1826256,12z/data=!3m1!4b1!4m6!3m5!1s0x39ef6c66e80fbfa9:0x38094d1a7c974283!8m2!3d26.6646381!4d87.271781!16s%2Fm%2F02vzwpq?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D">Itahari, Nepal</a>
+                            <a
+                                href="https://www.google.com/maps/place/Itahari/@26.6740409,87.1826256,12z/data=!3m1!4b1!4m6!3m5!1s0x39ef6c66e80fbfa9:0x38094d1a7c974283!8m2!3d26.6646381!4d87.271781!16s%2Fm%2F02vzwpq?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D">Itahari,
+                                Nepal</a>
                         </div>
                     </div>
-                    
+
                     <div class="contact-card delay-2">
                         <div class="contact-icon">
                             <i class="fas fa-share-alt"></i>
@@ -1204,18 +1235,22 @@
                             <h3>Social Media</h3>
                             <p>Connect with me on these platforms</p>
                             <div class="social-links">
-                                <a href="https://github.com/YudeenDahal" class="social-link"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/yudeen-dahal-7b1056296/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://x.com/DahalYudeen" class="social-link"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/uyudeen_dahal/?hl=en" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/YudeenDahal" class="social-link"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/yudeen-dahal-7b1056296/" class="social-link"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="https://x.com/DahalYudeen" class="social-link"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/uyudeen_dahal/?hl=en" class="social-link"><i
+                                        class="fab fa-instagram"></i></a>
                             </div>
                         </div>
-                    </div> 
+                    </div>
 
                 </div>
-                
 
-               <footer style="
+
+                <footer style="
 
   color: white;
   padding: 30px 0;
@@ -1226,74 +1261,83 @@
   border: 1px solid rgba(0, 247, 255, 0.1);
   transition: var(--transition);
 ">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <h3 style="margin-bottom: 15px; font-weight: 300;">Project Contributors</h3>
-    <div style="
+                    <div style="max-width: 800px; margin: 0 auto;">
+                        <h3 style="margin-bottom: 15px; font-weight: 300;">Project Contributors</h3>
+                        <div style="
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
       margin-bottom: 20px;
     ">
-      <span style="padding: 8px 15px; background-color: #521C0D; border-radius: 20px;">UYudeen Dahal</span>
-      <span style="padding: 8px 15px; background-color: #521C0D; border-radius: 20px;">Saimon Gurung</span>
-      <span style="padding: 8px 15px; background-color: #521C0D; border-radius: 20px;">Dimand Karki</span>
-    </div>
-    
-    <div style="margin: 20px 0; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">
-      <p style="font-size: 14px; opacity: 0.9;">&copy; 2025, May 31 <sup>th</sup> | yudeendahal | All rights reserved.</p>
-    </div>
-    
-    <div style="
+                            <span style="padding: 8px 15px; background-color: #521C0D; border-radius: 20px;">UYudeen
+                                Dahal</span>
+                            <span style="padding: 8px 15px; background-color: #521C0D; border-radius: 20px;">Saimon
+                                Gurung</span>
+                            <span style="padding: 8px 15px; background-color: #521C0D; border-radius: 20px;">Dimand
+                                Karki</span>
+                        </div>
+
+                        <div style="margin: 20px 0; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">
+                            <p style="font-size: 14px; opacity: 0.9;">&copy; 2025, May 31 <sup>th</sup> | yudeendahal |
+                                All rights reserved.</p>
+                        </div>
+
+                        <div style="
     
       font-family: 'Brush Script MT', cursive;
       font-size: 22px;
       margin-top: 15px;
       color: #ffb6c1;
     ">
-      Made with ❤️ and ☕ in Nepal
-    </div>
-     <div>
-        <img src="./download.gif" alt="Description of gif" style="margin-top: 5% ;" />
-     </div>
-  </div>
-</footer>
+                            Made with ❤️ and ☕ in Nepal
+                        </div>
+                        <div>
+                            <h3>Made with love ❤️ and endless cups of coffee ☕
+                                Crafted with care, passion, and peaceful minds
+                                Born in the heart of the Himalayas
+                                Guided by tradition, driven by dreams
+                                Simple yet soulful, just like the people
+                                Proudly made in Nepal-🇳🇵ꔪ  !________________________!
+                            </h3>
+                        </div>
+                    </div>
+                </footer>
 
-<script>
-    // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-    
-    mobileMenuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-    
-    // Close mobile menu when a link is clicked
-    const navItems = document.querySelectorAll('.nav-links a');
-    navItems.forEach(item => {
-        item.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
-    
-    // Back to top button
-    const backToTopBtn = document.querySelector('.back-to-top');
-    
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            backToTopBtn.classList.add('active');
-        } else {
-            backToTopBtn.classList.remove('active');
-        }
-    });
-    
-    backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-</script> 
+                <script>
+                    // Mobile menu toggle
+                    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+                    const navLinks = document.querySelector('.nav-links');
+
+                    mobileMenuBtn.addEventListener('click', () => {
+                        navLinks.classList.toggle('active');
+                    });
+
+                    // Close mobile menu when a link is clicked
+                    const navItems = document.querySelectorAll('.nav-links a');
+                    navItems.forEach(item => {
+                        item.addEventListener('click', () => {
+                            navLinks.classList.remove('active');
+                        });
+                    });
+
+                    // Back to top button
+                    const backToTopBtn = document.querySelector('.back-to-top');
+
+                    window.addEventListener('scroll', () => {
+                        if (window.pageYOffset > 300) {
+                            backToTopBtn.classList.add('active');
+                        } else {
+                            backToTopBtn.classList.remove('active');
+                        }
+                    });
+
+                    backToTopBtn.addEventListener('click', () => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                </script>
 
 </body>
-                   
